@@ -1,0 +1,55 @@
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    display: grid;
+    grid-template-areas: 'pudim pudim pudim pudim' 
+                         'section section section section' 
+                         'footer footer footer footer';
+                        
+
+    grid-template-rows: 150vh 50vh 50vh;
+    grid-template-columns: 20vw 20vw 20vw;
+}
+
+header{
+    grid-area: pudim;
+    background-color: #624be2;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+   font-size: 170%;
+   color: white;
+}
+
+
+section{
+    grid-area: section;
+    background-image: url("images/banner.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-color: rgb(211, 72, 21);
+    margin:0;
+}
+
+footer{
+    grid-area: footer;
+    background-color: #e2dde6;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+div.email {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;  
+}
+
+
+
+
+
+
