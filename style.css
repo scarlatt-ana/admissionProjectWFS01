@@ -94,7 +94,7 @@ footer{
     border: none;
 }
 
-#botao2{
+.botao2{
     width: 18%;
     height: 14%;
     display: flex;
@@ -111,32 +111,32 @@ footer{
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
 
-body {
+    body {
 
-    grid-template-areas:'header'
-    'section'
-    'footer';
-    grid-template-rows: 100vh 40vh 40vh;
-    grid-template-columns: 100%;
+        grid-template-areas:'header'
+        'section'
+        'footer';
+        grid-template-rows: 100vh 40vh 40vh;
+        grid-template-columns: 100%;
 
-}
+    }
 
-section {
+    section {
 
-    flex-direction: column;
+        flex-direction: column;
 
-}
+    }
 
-section > aside {
+    section > aside {
 
-    width: 100%;
+        width: 100%;
 
-}
+    }
 
-#input1, .botao2 {
+    #input1, .botao2 {
 
-    font-size: 12pt;
+        font-size: 12pt;
 
-}
+    }
     
 }
