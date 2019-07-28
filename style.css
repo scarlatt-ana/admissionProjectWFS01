@@ -21,7 +21,7 @@ header {
 
 div {
     font-family: Arial, Helvetica, sans-serif;
-    width: 95%;
+    width: 98%;
     text-align: end;
     margin: 3%;
 }
@@ -42,12 +42,15 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
 }
 
 #imagem img {
     height: 100%;
     width: 600px;
-    
+    max-width: 100%;
 }
 
 .turma{
@@ -91,7 +94,7 @@ footer{
     border: none;
 }
 
-.botao2{
+#botao2{
     width: 18%;
     height: 14%;
     display: flex;
@@ -104,4 +107,36 @@ footer{
     border: none;
 }
 
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
 
+body {
+
+    grid-template-areas:'header'
+    'section'
+    'footer';
+    grid-template-rows: 100vh 40vh 40vh;
+    grid-template-columns: 100%;
+
+}
+
+section {
+
+    flex-direction: column;
+
+}
+
+section > aside {
+
+    width: 100%;
+
+}
+
+#input1, .botao2 {
+
+    font-size: 12pt;
+
+}
+    
+}
